@@ -1,1 +1,2 @@
 /index.html 200
+/api/* http://ec2-13-53-46-161.eu-north-1.compute.amazonaws.com:8080/random/:splat 200!

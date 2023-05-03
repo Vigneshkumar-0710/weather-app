@@ -131,7 +131,7 @@ export default function App() {
   const fetchWeather = async (event) => {
     event.preventDefault();
     const {data} = await axios.get(
-      `http://ec2-13-53-46-161.eu-north-1.compute.amazonaws.com:8080/city?city=${city}`
+      `/city?city=${city}`
     );
     updateWeather(data);
   };

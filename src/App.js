@@ -131,7 +131,7 @@ export default function App() {
   const fetchWeather = async (event) => {
     event.preventDefault();
     const {data} = await axios.get(
-      `http://api.weatherapi.com/v1/current.json?key=eec7b272a14d4d68bce172252230205&q=${city}&aqi=no`
+      `localhost:8080/city?city=${city}`
     );
     updateWeather(data);
   };
